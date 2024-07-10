@@ -89,21 +89,23 @@ footer{
 }
 
 footer .rodape{
-    width:min(320px,100%);
+    width:0ch;
     height:min(10vh,100%);
     background: #fd267d;
     margin:0 auto;
     border-radius:50px;
     padding:1rem;
-
-    animation: mudarCores 10s infinite alternate;
+    overflow:hidden;
+    animation: mudarCores 10s infinite alternate, width 2s steps(15);
 
 }
 footer .rodape p{
     color:white;
-    
+    width:35ch;
     animation: mudarCores 10s infinite alternate-reverse;
     text-align: center;
+ 
+    
 }
 
 .coracao{
